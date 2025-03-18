@@ -104,7 +104,9 @@ img.large {
     justify-content: space-between;
 }
 footer{
-    background: #ffdd00;
+    background: var(--couleur-texte-principal);
+    color: var(--couleur-valorant-principal);
     padding: 150px;
     margin-top: 50px;
+    text-align: center;
 }
