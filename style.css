@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --couleur-valorant-principal: #FF4655;
+    --couleur-valorant-principal-foncee: #cc3340;
+    --couleur-fond-text:rgb(251, 251, 251);
+    --couleur-texte-principal: #1A1A1A;
+    --couleur-ombre: rgb(49, 49, 49);
 }
 
 @font-face {
@@ -13,29 +19,31 @@ body {
 }
 
 body {
-    background: rgb(250, 250, 250);
-    background: linear-gradient(328deg, #e3114d 0%, #f6848e 100%) no-repeat;
-    font-family: verdana;
+    background: var(--couleur-valorant-principal-foncee);
+    background: linear-gradient(-10deg, var(--couleur-valorant-principal) 0%, var(--couleur-valorant-principal-foncee) 100%) no-repeat;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     min-height: 100vh;
+    color: var(--couleur-texte-principal);
 }
 
 .navbar {
-    background: rgb(251, 251, 251);
-    padding: 30px;
-    box-shadow: 0 0 10px -4px rgb(49, 49, 49);
+    background:var(--couleur-fond-text);
+    padding: 30px; left: 0px ; right: 0px;
+    box-shadow: 0 0 10px -4px var(--couleur-ombre);
 
-    position: relative;
+    position: fixed;
     z-index: 1;
+    
 }
 
 main {
-    border: 2px solid #ff1A1A1A(252, 100, 100);
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color:var(--couleur-fond-text);
     max-width: 900px;
     margin: 0 auto;
     padding: 25px;
+    padding-top: 90px;
+    box-shadow: 0 0 10px -4px var(--couleur-ombre);
 }
 
 h1 {
@@ -56,8 +64,8 @@ a {
 }
 
 a.retour {
-    color: rgb(25, 25, 25);
-    background: rgb(255, 113, 113);
+    color: var(--couleur-texte-principal);
+    background: var(--couleur-valorant-principal);
     padding: 14px 25px;
     border-radius: 8px;
     display: inline-block;
