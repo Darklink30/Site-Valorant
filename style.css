@@ -3,7 +3,7 @@
 :root {
     --couleur-valorant-principal: #FF4655;
     --couleur-valorant-principal-foncee: #cc3340;
-    --couleur-fond-text:rgb(251, 251, 251);
+    --couleur-fond-text: rgb(251, 251, 251);
     --couleur-texte-principal: #1A1A1A;
     --couleur-ombre: rgb(49, 49, 49);
 }
@@ -28,21 +28,21 @@ body {
 }
 
 .navbar {
-    background:var(--couleur-fond-text);
+    background: var(--couleur-fond-text);
     padding: 10px;
-     left: 0px ;
-      right: 0px;
+    left: 0px;
+    right: 0px;
     box-shadow: 0 0 10px -4px var(--couleur-ombre);
     position: fixed;
     z-index: 1;
     text-align: center;
-    
 
-    
+
+
 }
 
 main {
-    background-color:var(--couleur-fond-text);
+    background-color: var(--couleur-fond-text);
     max-width: 900px;
     margin: 0 auto;
     padding: 25px;
@@ -67,7 +67,7 @@ a {
     text-decoration: none;
 }
 
-a.retour {
+a.bouton {
     color: var(--couleur-texte-principal);
     background: var(--couleur-valorant-principal);
     padding: 14px 25px;
@@ -77,8 +77,8 @@ a.retour {
 
 }
 
-.retour:hover {
-    background-color: var(--couleur-valorant-principal);
+.bouton:hover {
+    background-color: var(--couleur-valorant-principal-foncee);
 }
 
 
@@ -93,6 +93,18 @@ ol {
 h2.sous-titre {
     text-align: center;
 }
-img.large{
-  max-width: 100% ;height: auto;
+
+img.large {
+    max-width: 100%;
+    height: auto;
+}
+
+.boutons {
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background: #ffdd00;
+    padding: 150px;
+    margin-top: 50px;
 }
