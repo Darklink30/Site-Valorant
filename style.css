@@ -89,3 +89,6 @@ ol {
 h2.sous-titre {
     text-align: center;
 }
+img.large{
+  max-width: 100% ;height: auto;
+}
